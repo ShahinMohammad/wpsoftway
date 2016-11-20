@@ -102,9 +102,13 @@ add_action( 'widgets_init', 'wpsoftway_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wpsoftway_scripts() {
-	wp_enqueue_style( 'wpsoftway-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'wpsoftway-style', get_stylesheet_uri() ); 
+	wp_enqueue_style( 'wpsoftway-bootstyle', get_template_directory_uri().'/css/bootstrap.min.css');
+	
 
-	wp_enqueue_script( 'wpsoftway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+   wp_enqueue_script('wpsoftway-bootjs',get_template_directory_uri().'js/bootstrap.min.js',array('jquery'),'true','true');
+
+   
 
 	wp_enqueue_script( 'wpsoftway-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -138,3 +142,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+// Register Custom Navigation Walker
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
