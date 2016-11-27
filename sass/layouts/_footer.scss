@@ -1,0 +1,15 @@
+
+#colophon{
+  background:black;
+  padding:200px;
+  color:white;
+  transition:1s;
+
+}
+#colophon a{
+	color:gray;
+}
+#colophon:hover {
+	background:white;
+	color:black;
+}

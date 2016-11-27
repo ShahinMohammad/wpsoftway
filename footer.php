@@ -14,8 +14,8 @@
 	</div><!--container-->
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer " role="contentinfo">
+		<div class="site-info container text-center ">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wpsoftway' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'wpsoftway' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'wpsoftway' ), 'wpsoftway', '<a href="http://www.shahin.me" rel="designer">shahin</a>' ); ?>

@@ -51,6 +51,12 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<div class="con"> 
+     <h1>For imfnskdhf help now in my room</h1>
+      <a href="#">02298838938</a>
+
+	</div>
+
 <?php
 get_sidebar();
 get_footer();

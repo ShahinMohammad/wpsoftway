@@ -40,6 +40,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+#layouts
+   #footer.scss
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Typography
@@ -521,5 +523,29 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*------------------------------------------------------------------------------------------
+#layouts
+------------------------------------------------------------------------------------------*/
+#colophon {
+  background: black;
+  padding: 200px;
+  color: white;
+  transition: 1s; }
+
+#colophon a {
+  color: gray; }
+
+#colophon:hover {
+  background: white;
+  color: black; }
+
+
+  .con{
+    width:500px;
+    margin:right;
+    
+  }
+  
 
 /*# sourceMappingURL=style.css.map */
